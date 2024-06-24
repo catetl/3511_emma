@@ -1,5 +1,12 @@
 import Image from "next/image";
 import { Navbar } from "./components/Navbar";
+import EmblaCarousel from './components/EmblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel'
+import './embla.css'
+
+const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 // need to create style constants e.g. fonts, colours
 export default function Home() {
@@ -55,6 +62,11 @@ export default function Home() {
           <div className="bg-gray-400 h-40 flex items-center justify-center">
             Box 3
           </div>
+          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+
+
+
+
         </section>
       </main>
     </div>
