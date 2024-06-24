@@ -1,11 +1,13 @@
 import Image from "next/image";
+import { Navbar } from "./components/Navbar";
 
 // need to create style constants e.g. fonts, colours
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-8 flex items-center justify-between">
-        <div>
+      {/* <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-8 flex items-center justify-between"> */}
+        <Navbar/>
+        {/* <div>
           <h1>UNSW TerriaJS TESTER</h1>
         </div>
         <nav className="flex space-x-6">
@@ -34,8 +36,8 @@ export default function Home() {
           <button className="bg-darkgrey hover:bg-gray-900 text-white px-4 py-2 rounded-md">
             Register
           </button>
-        </div>
-      </header>
+        </div> */}
+      {/* </header> */}
 
       <main className="bg-white flex pt-20">
         <section className="container mx-auto px-4">
