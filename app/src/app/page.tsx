@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import EmblaCarousel from './components/EmblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel'
 import './embla.css'
+import Carousel from './components/Carousel'
 
 const OPTIONS: EmblaOptionsType = { loop: true }
 const SLIDE_COUNT = 5
@@ -62,7 +63,8 @@ export default function Home() {
           <div className="bg-gray-400 h-40 flex items-center justify-center">
             Box 3
           </div>
-          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+          <Carousel slides={SLIDES} options={OPTIONS} />
+
 
 
 
