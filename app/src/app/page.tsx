@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-8 flex items-center justify-between"> */}
-        <Navbar/>
         {/* <div>
           <h1>UNSW TerriaJS TESTER</h1>
         </div>
